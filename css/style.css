@@ -54,7 +54,8 @@ p {
   width: 70%;
   margin-top: 32px;
   font-family: Trade Winds;
-  font-size: 16px;
+  font-size: 24px;
+  color: cyan;
 
   
 }
@@ -62,6 +63,7 @@ p {
 #main_banner {
   font-family: Trade Winds;
   font-size: 32px;
+  color: cyan;
 }
 
 .parallax-container {
@@ -75,7 +77,20 @@ p {
   }
 
 
-@media only screen and (max-width : 992px) {
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+    .carousel .carousel-item {
+  width:300px !important;
+  min-height: :300px !important;}
+
+}
+
+@media only screen (min-width: 660px) and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -83,14 +98,12 @@ p {
   #index-banner .section {
     top: 10%;
   }
-}
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
+    .carousel .carousel-item {
+  width:500px !important;
+  min-height: :500px !important;}
 
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -144,6 +157,23 @@ footer.page-footer {
 .fa-youtube {
   background: #bb0000;
   color: white;
+}
+
+.blockquote_custom{
+  background-color: #009;
+  color: cyan;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+  padding-left: 1.5rem;
+  border-left: 5px solid #64b5f6;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.parallax-container {
+    line-height: 0;
+    color: cyan;
 }
 
 
