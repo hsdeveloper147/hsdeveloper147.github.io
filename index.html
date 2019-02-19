@@ -16,7 +16,7 @@
   
    
             
-  <div id="index-banner" class="row parallax-container " style="height: 100vh !important;">
+  <div id="index-banner" class="row parallax-container " style="height: 100vh !important;margin-bottom: 0px">
     <div>
             <ul id="slide-out" class="sidenav">
                     <li><div class="user-view">
@@ -33,7 +33,7 @@
                     <li><a class="subheader">Subheader</a></li>
                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
-            <a href="#" data-target="slide-out" style="margin-left: 16px !important;margin-top: 24px !important" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="slide-out" style="margin-left: 16px !important;margin-top: 24px !important;" class="sidenav-trigger hide-on-small-only"><i class="material-icons">menu</i></a>
         
     </div>
     <div class="section no-pad-bot">
@@ -44,8 +44,6 @@
         <br><br>
         <p id="specs"><b>Deep Learning Enthusiast &nbsp; | &nbsp; Android Developer &nbsp;|&nbsp; Web Developer</b> </p>
 
-        <p id="specs" style="font-family: Arial"> I am Deep Learning and AI enthusiast. I am currently M.Tech Student at IIIT Delhi. I have a paper title as "Identification of Diabetic Retinopathy in Eye Images Using Transfer Learning" published in ICCCA, 2017. My skill set also include Web Development (HTML, CSS, JS, PHP) and Android Application and Game Development. I am also a Udacity Front End Web Development Nanodegree Graduate.
-        </p>
         <div id="social_icons">
             <a href="https://www.linkedin.com/in/hsdeveloper147/" target="blank" class="fa fa-linkedin z-depth-4 waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Linkedin"></a>
             <a href="https://github.com/hsdeveloper147" target="blank" class="fa fa-github z-depth-4 waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Github"></a>
@@ -59,23 +57,38 @@
   </div>
 
 
-  <div class="container">
-    <div class="section">
-
-     </div>
-  </div>
-
-
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          
+        <p id="specs"> I am Deep Learning and AI enthusiast. I am currently M.Tech Student at IIIT Delhi. I have a paper title as "Identification of Diabetic Retinopathy in Eye Images Using Transfer Learning" published in ICCCA, 2017. My skill set also include Web Development (HTML, CSS, JS, PHP) and Android Application and Game Development. I am also a Udacity Front End Web Development Nanodegree Graduate.
+        </p>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
+  <div class="container">
+    <div class="section">
+        <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+        
+     </div>
+  </div>
+
 
   <div class="container">
     <div class="section">
@@ -152,6 +165,9 @@
     $('.sidenav').sidenav();
   });
       
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
     
   </script>
 
