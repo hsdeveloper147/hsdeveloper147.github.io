@@ -11,10 +11,45 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style type="text/css">
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript, 
+    if it's not present, don't show loader */
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(images/Preloader_3.gif) center #000;
+      background-size: cover;
+      
+    }
+  </style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script type="text/javascript">
+    //paste this code under the head tag or in a separate js file.
+  // Wait for window load
+
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+  
+</script>
+
 </head>
 <body>
   
-   
+  <div class="se-pre-con"></div>
             
   <div id="index-banner" class="row parallax-container " style="height: 100vh !important;margin-bottom: 0px;color: black;">
     <div>
@@ -191,7 +226,7 @@
       in Java. It allows registered Patients to take appointment and Doctors to view their patients.</span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">laptop_windows</i>IIID Online Job Application (Website)</div>
+      <div class="collapsible-header"><i class="material-icons">laptop_windows</i>IIIT Delhi Online Job Application (Website)</div>
       <div class="collapsible-body"><span></span>Developed Online Job Application for IIIT Delhi. It allows Job Applications for multiple posts
       offered at IIIT Delhi. The application allows saving details for individual sections of form.</div>
     </li>
@@ -337,11 +372,11 @@
   <footer class="page-footer"  style="background-image: url('images/connect.png') !important;color: black ;text-shadow: 2px 2px #FFF;
 ;
 ">
-    <div class="container">
+    <div class="container" style="background-color: white; opacity: 0.8">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="black-text">Connect with me</h5>
-            <ul>
+        <div class="col l6 s12 left">
+          <h4 class="black-text">Connect with me</h4>
+            <ul style="font-size: 16px;">
               <li>
                 <i class="material-icons">email</i>
                 <a href="mailto:himanshu18074@iiitd.ac.in" target="_top" style="color: black">IIIT Delhi Email Id</a>
@@ -392,6 +427,8 @@
       
     
   </script>
+
+
 
   </body>
 </html>
