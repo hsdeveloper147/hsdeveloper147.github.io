@@ -56,22 +56,26 @@ p {
   margin-top: 32px;
   font-family: Trade Winds;
   font-size: 24px;
-  color: cyan;
-
+  color: yellow;
+  text-shadow: 2px 2px #FF0000;
   
 }
 
 #main_banner {
   font-family: Trade Winds;
-  font-size: 32px;
-  color: cyan;
+  font-size: 36px;
+  color: yellow;
+  text-shadow: 2px 2px #FF0000;
+
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 420px;
+  max-height: 800px;
   line-height: 0;
   height: auto;
-  color: cyan;
+  color: white;
+
 }
   .parallax-container .section {
     width: 100%;
@@ -162,7 +166,7 @@ footer.page-footer {
 
 .blockquote_custom{
   background-color: #009;
-  color: cyan;
+  color: white;
   margin-left: auto;
   margin-right: auto;
   margin: 20px;
